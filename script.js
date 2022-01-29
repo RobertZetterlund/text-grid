@@ -10,7 +10,6 @@ function main() {
       .split("")
       .map((char, i) => `<span class="char">${char}</span>`);
     el.innerHTML = characters.join("");
-    el.style.setProperty("--total", characters.length);
     return el.querySelectorAll(".char");
   }
 
